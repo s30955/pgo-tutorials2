@@ -10,7 +10,7 @@ public class Student {
         double srednia = 0;
 
         if (grades.length > 20) {
-            System.out.println("Za dużo ocen");
+            throw new IllegalArgumentException("Za dużo ocen");
         } else if (grades.length == 0) {
             throw new IllegalArgumentException("Brak ocen");
         } else if (grades.length < 0 && grades.length <= 20) {
